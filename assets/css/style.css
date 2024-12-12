@@ -131,7 +131,7 @@ header {
     border: var(--border-temp);
     background-color: var(--header-bg-color);
     z-index: 99;
-    box-shadow: 0 0 5px var(--header-shadow);
+    
     
     height: 70px;
     /* scroll-margin-top: 10px; */
@@ -353,7 +353,7 @@ p {
 }
 
 .project-card:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .project-card h2 {
@@ -499,6 +499,7 @@ footer {
 
 .wrapper .box .content{
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -638,6 +639,10 @@ footer {
     max-width: 100%;
   }
 
+  header {
+    box-shadow: 0 0 5px var(--header-shadow);
+  }
+
   .header_nav {
     position: fixed;
     top: 0;
@@ -753,6 +758,11 @@ footer {
 /* +++++++++++++++++++ MOBILE VIEW +++++++++++++++++++ */
 
 @media screen and (max-width: 767px) {
+
+  header {
+    box-shadow: 0 0 5px var(--header-shadow);
+  }
+
   .project-cards {
     grid-template-columns: 2fr;
   }
